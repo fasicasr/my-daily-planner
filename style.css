@@ -34,6 +34,18 @@ textarea {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
+  background-color: gray;
+}
+.row2 {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+  background-color: red;
+}
+.row3 {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
   background-color: green;
 }
 
