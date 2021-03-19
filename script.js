@@ -6,7 +6,7 @@ document.getElementById("currentDay").innerHTML = now;
 let textValue;
 //currentTime will get the value of hour(h)
 // let currentTime =  moment(date).format('h');
-let currentTime = 2;
+let currentTime = 3;
 let timeArray = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 let timeIndex;
 //matching currentTime with timeArray[timeIndex]
@@ -37,8 +37,10 @@ for (i = 0; i < timeArray.length; i++) {
     //else display green 
     //<textarea> element is used to collect user input. multi-line plain-text editing control
     if (i < timeIndex ) { //prints gray(past)
-        // textValue = localStorage.getItem(localStorage.key());
         textValue = localStorage.getItem(i);
+        if (textValue === null){
+            textValue = '';
+        }
         $( ".container" ).append ('<div id="'+timeArray[i]+'" class="row past time-block">\
         <div class="col-md-1 hour">'+timeArray[i]+'</div>\
         <textarea class="col-md-10" id="textStorage">'+textValue+'</textarea>\
@@ -47,6 +49,9 @@ for (i = 0; i < timeArray.length; i++) {
         
     }else if (i === timeIndex){//prints red(current)
         textValue = localStorage.getItem(i);
+        if (textValue === null){
+            textValue = '';
+        }
         $( ".container" ).append ('<div id="'+timeArray[i]+'" class="row present time-block">\
         <div class="col-md-1 hour">'+timeArray[i]+'</div>\
         <textarea class="col-md-10" id="textStorage">'+textValue+'</textarea>\
@@ -55,6 +60,9 @@ for (i = 0; i < timeArray.length; i++) {
        
     }else {//prints green (future)
         textValue = localStorage.getItem(i);
+        if (textValue === null){
+            textValue = '';
+        }
         $( ".container" ).append ('<div id="'+timeArray[i]+'" class="row future time-block">\
         <div class="col-md-1 hour">'+timeArray[i]+'</div>\
         <textarea class="col-md-10" id="textStorage">'+textValue+'</textarea>\
