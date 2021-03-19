@@ -12,13 +12,20 @@ textarea {
   border-left: 1px solid black;
   padding: 10px;
 }
-
-.jumbotron {
+/*a big gray box that can hold html and bootstap elements/clss*/
+.jumbotron  {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0;
   border-bottom: 10px solid black;
+}
+
+#currentDay {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+ 
 }
 
 .description {
@@ -28,26 +35,17 @@ textarea {
 .time-block {
   text-align: center;
   border-radius: 15px;
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
 }
 
-.row {
+ .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
   background-color: gray;
-}
-.row2 {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-  background-color: red;
-}
-.row3 {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
-  background-color: green;
-}
+} 
 
 .hour {
   background-color: #ffffff;
