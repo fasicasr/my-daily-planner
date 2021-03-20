@@ -19,20 +19,20 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
+    <title>Daily Planner</title>
     <p id="currentDay"></p>
   </head>
 
   <body>
     <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h1 class="display-3">My Daily Planner</h1>
+      <p class="lead">A simple daily planner to organize your work and personal life</p>
       <p id="currentDay" class="lead"></p>
       <div id="moment"></div>
     </header>
     <div class="container"></div>
-    <!-- <div class="past"></div>
-    <div class="current"></div> -->
+    <!-- originally had several lines of code where I wrote out each indivial column and row. 
+      When I realized that the codes were repetitive, i used .append in my script.js to bind the codes -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="./script.js"></script>
