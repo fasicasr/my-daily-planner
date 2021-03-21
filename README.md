@@ -11,7 +11,7 @@ Users can use this simple application to plan their daily work and/or life sched
 # Webpage Demo
 
 * 
-![webpage gif](./imges/plannergif.mov)
+![webpage gif](<iframe src="https://giphy.com/embed/lzcGBQgdPpyOIFDMUR" width="480" height="352" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/lzcGBQgdPpyOIFDMUR">via GIPHY</a></p>)
 
 
 # Webpage Links
