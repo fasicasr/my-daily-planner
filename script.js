@@ -32,22 +32,22 @@ if (currentTime == 9) {
 let i;
 //used +timeArray+ to get the value of the variable(timeArray)
 for (i = 0; i < timeArray.length; i++) {
-    //if timeArray is <= 11am display rows gray 
-    //else if timeArray === 12pm display row red 
-    //else display green 
+    //if timeArray is <= currentTime display rows pink
+    //else if timeArray === currentTime display row  teal
+    //else display light bluw
     //<textarea> element is used to collect user input
-    if (i < timeIndex ) { //prints gray(past)
+    if (i < timeIndex ) { //prints dusty rose(past)
         textValue = localStorage.getItem(i);
-        if (textValue === null){
+        if (textValue === null){ //if there is no text/value(null) in row, diplay the row as empty 
             textValue = '';
-        }
+        }//
         $( ".container" ).append ('<div id="'+timeArray[i]+'" class="row past time-block">\
         <div class="col-md-1 hour">'+timeArray[i]+'</div>\
         <textarea class="col-md-10" id="textStorage">'+textValue+'</textarea>\
         <button class="saveBtn col-md-1 fa fa-save" id="'+i+'"></button>\
         </div>'); 
         
-    }else if (i === timeIndex){//prints red(current)
+    }else if (i === timeIndex){//prints dark teal(current)
         textValue = localStorage.getItem(i);
         if (textValue === null){
             textValue = '';
@@ -58,7 +58,7 @@ for (i = 0; i < timeArray.length; i++) {
         <button class="saveBtn col-md-1 fa fa-save" id="'+i+'"></button>\
         </div>'); //found the save icon from fontawesome
        
-    }else {//prints green (future)
+    }else {//prints light blue (future)
         textValue = localStorage.getItem(i);
         if (textValue === null){
             textValue = '';
