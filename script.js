@@ -5,8 +5,8 @@ document.getElementById("currentDay").innerHTML = now;
 
 let textValue;
 //currentTime will get the value of hour(h)
-// let currentTime =  moment(date).format('h');
-let currentTime = 12; //use when testing a hours past 9-5pm
+let currentTime =  moment(date).format('h');
+// let currentTime = 12; //use when testing a hours past 9-5pm
 let timeArray = ["9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm"];
 let timeIndex;
 //matching currentTime with timeArray[timeIndex]

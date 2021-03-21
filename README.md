@@ -8,13 +8,13 @@ Users can use this simple application to plan their daily work and/or life sched
 * After typing an event on the time slots, users are able to save thier event by clicking the bottom on the right of the screen.
 * Users are able to refresh the page to see their saved events.
 
-# Webpage Demo
+# Webpage Display
 
-* 
-![webpage gif](https://gph.is/g/ajMWg3j)
+*  My Daily Planner wegpage screenshot:
+![webpage](./images/planner-screenshot.png)
 
 
 # Webpage Links
 
-Application URL: 
-Github: 
+Application URL: https://fasicasr.github.io/my-daily-planner/index.html
+Github: https://github.com/fasicasr/my-daily-planner
